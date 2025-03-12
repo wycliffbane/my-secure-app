@@ -1,14 +1,25 @@
 {
   "name": "my-secure-app",
   "version": "1.0.0",
-  "description": "A secure app project",
+  "description": "A secure app with Node.js and PM2",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "echo 'No tests yet' && exit 0",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "pm2-start": "pm2 start app.js --name \"my-secure-app\"",
+    "pm2-restart": "pm2 restart my-secure-app",
+    "pm2-save": "pm2 save"
   },
   "dependencies": {
     "express": "^4.17.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "pm2": "^5.1.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
 }
 
