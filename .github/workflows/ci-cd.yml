@@ -24,6 +24,10 @@ jobs:
       - name: Install PM2 globally
         run: npm install -g pm2
 
+      # Install Snyk globally to run security tests
+      - name: Install Snyk
+        run: npm install -g snyk
+
       - name: Run Snyk test
         run: snyk test
 
