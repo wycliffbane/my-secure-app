@@ -28,9 +28,9 @@ jobs:
       - name: Install Snyk
         run: npm install -g snyk
 
-      # Authenticate Snyk with the API token stored in GitHub Secrets
+      # Authenticate with Snyk using GitHub secrets
       - name: Authenticate with Snyk
-        run: snyk auth ${{ 6eb5d66e-c61e-479e-b3ee-511597876d11 }}
+        run: snyk auth ${{ secrets.SNYK_TOKEN }}
 
       - name: Run Snyk test
         run: snyk test
