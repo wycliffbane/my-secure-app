@@ -1,31 +1,16 @@
 {
   "name": "my-secure-app",
   "version": "1.0.0",
-<<<<<<< HEAD
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
-=======
-  "main": "index.js",
-  "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
->>>>>>> 151968c5f43056517a9207eae093d16b18956270
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-<<<<<<< HEAD
   "dependencies": {
     "express": "^4.21.2"
-  },
-  "devDependencies": {
-    "jest": "^29.7.0",
-    "supertest": "^7.0.0"
-=======
-  "description": "",
-  "dependencies": {
-    "express": "^4.21.2"
->>>>>>> 151968c5f43056517a9207eae093d16b18956270
   }
 }
+
